@@ -36,5 +36,5 @@ function buttonClick() {
 
     function resetClick(){
         document.getElementById("text-box").value = "";
-        document.getElementById("result-word").value = "";
+        document.getElementById("result-word").textContent = "";
     }
