@@ -1,3 +1,4 @@
+
 function buttonClick() {
     var userNumber = parseInt(document.getElementById("text-box").value);
     var result = document.getElementById("result-word");
@@ -30,11 +31,15 @@ function buttonClick() {
         };
 
         
+    }; 
+    
+    if(userNumber>=1000){
+        result.textContent = "Invalid Input";
     };
         
     } 
 
     function resetClick(){
         document.getElementById("text-box").value = "";
-        document.getElementById("result-word").styles.display = "none";
+        document.getElementById("result-word").textContent = "";
     }
